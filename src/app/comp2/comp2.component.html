@@ -1,0 +1,4 @@
+<div><input type="number" [(ngModel)]="input1" /></div> 
+<div><input type="number" [(ngModel)]="input2" /></div> 
+<button (click)="addIntegers()">show results</button>
+<app-comp2-child [sum]="sum" (notifyParent)="updateFromChild($event)"></app-comp2-child>

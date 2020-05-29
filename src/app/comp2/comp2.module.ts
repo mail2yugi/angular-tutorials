@@ -4,12 +4,14 @@ import { CommonModule } from "@angular/common";
 import { Comp2RoutingModule } from "./comp2-routing.module";
 import { Comp2Component } from "./comp2.component";
 import { Comp2ChildComponent } from "./comp2-child/comp2-child.component";
+import { ShowResultsComponent } from "./show-results/show-results.component";
 
 
 @NgModule({
   declarations: [
     Comp2Component,
-    Comp2ChildComponent
+    Comp2ChildComponent,
+    ShowResultsComponent
   ],
   imports: [
     FormsModule,

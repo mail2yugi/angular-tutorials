@@ -1,13 +1,16 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { Comp1Component } from "./comp1/comp1.component";
+import { Comp2Component } from "./comp2/comp2.component";
+import { Comp3Component } from "./comp3/comp3.component";
 
 
 
 const routes: Routes = [
   { path: "", redirectTo: "comp1", pathMatch: "full"},
   { path: "comp1", component: Comp1Component},
-  { path: "comp2", loadChildren: "./comp2/comp2.module#Comp2Module"},
+  { path: "comp2", component: Comp2Component},
+  { path: "comp3", component: Comp3Component},
   { path: "**", redirectTo: "comp1", pathMatch: "full"},
 ];
 

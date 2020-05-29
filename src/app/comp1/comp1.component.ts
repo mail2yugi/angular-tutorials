@@ -9,7 +9,7 @@ export class Comp1Component implements OnInit, OnDestroy {
 
   constructor() { }
   ngOnDestroy(): void {
-      alert("ddd");
+
   }
 
   ngOnInit() {

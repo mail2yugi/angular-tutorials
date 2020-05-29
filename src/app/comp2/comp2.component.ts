@@ -12,11 +12,11 @@ export class Comp2Component implements OnInit, OnDestroy, DoCheck, AfterContentC
   sum = 0;
 
   ngAfterContentInit() {
-    alert("ngAfterContentInit");
+    console.log("ngAfterContentInit trigginging");
   }
 
   ngAfterContentChecked() {
-      alert("ngAfterContentChecked");
+    console.log("ngAfterContentChecked trigginging");
   }
 
   constructor() { }
@@ -34,7 +34,7 @@ export class Comp2Component implements OnInit, OnDestroy, DoCheck, AfterContentC
   }
 
   updateFromChild(arg1) {
-    alert("updateParent." + arg1);
+    alert("I am listnening Child. " + arg1);
   }
 
   ngDoCheck() {
